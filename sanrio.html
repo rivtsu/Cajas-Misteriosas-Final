@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Colección Sanrio: figuras sorpresa, cajitas misteriosas y coleccionables de Pochaco, Hello Kitty, Kuromi y más. Descubre las mejores mini figuras estilo Pop Mart.">
+
+  <title>Colección Sanrio</title>
+
+  <!-- CSS general -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- CSS exclusivo de categorías -->
+  <link rel="stylesheet" href="stylessanrio.css">
+</head>
+
+<body>
+
+  <!-- Header con menú -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <header class="header">
+    <h1>Colección Sanrio</h1>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+
+        <li class="dropdown">
+          <button class="dropbtn">
+            Colecciones
+            <span class="arrow">▼</span>
+          </button>
+
+          <ul class="dropdown-content">
+            <li>
+              <a href="sanrio.html">
+                <img src="menu/Sanrio.jfif" alt="Sanrio">
+                Sanrio
+              </a>
+            </li>
+
+            <li>
+              <a href="seriesanimadas.html">
+                <img src="menu/Series Animadas.jfif" alt="Series Animadas">
+                Series Animadas
+              </a>
+            </li>
+
+            <li>
+              <a href="peliculas.html">
+                <img src="menu/Peliculas.jfif" alt="Películas">
+                Películas
+              </a>
+            </li>
+
+            <li>
+              <a href="disney.html">
+                <img src="menu/Disney.jpg" alt="Disney">
+                Disney
+              </a>
+            </li>
+
+            <li>
+              <a href="anime.html">
+                <img src="menu/Anime.jfif" alt="Anime">
+                Anime
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Galería estilo Pop Mart -->
+<main class="galeria-popmart">
+
+  <!-- Tarjeta Pochacco -->
+  <div class="card-popmart" onclick="location.href='pochaco.html'">
+
+    <div class="img-container">
+      <img src="imagenes P/Cute Sanrio Cartoon Doll Pachacco School Fun Series Blind Box Pvc Anime Cute Handmade Toy Festival Surprise Gift Home Decoration, All 6 boxes (1).jfif"
+           alt="Colección Pochaco">
+
+      <img class="img-hover"
+           src="categoria/sanrio 1.2.jfif"
+           alt="Pochaco Hover">
+    </div>
+
+    <h2>Colección Pochaco – Sanrio</h2>
+    <p>Figuras sorpresa oficiales de Pochaco.</p>
+    <p style="font-weight:bold; color:#b00020;">$15</p>
+
+  </div>
+
+
+  <!-- Tarjeta Navidad -->
+  <div class="card-popmart" onclick="location.href='pochaco.html'">
+
+    <div class="img-container">
+      <img src="categoria/sanrio 2 (2).jfif"
+           alt="Colección de Navidad">
+
+      <img class="img-hover"
+           src="categoria/sanrio 2 (1).jfif"
+           alt="Navidad Hover">
+    </div>
+
+    <h2>Colección De Navidad – Sanrio</h2>
+    <p>Figuras sorpresa oficiales de navidad.</p>
+    <p style="font-weight:bold; color:#b00020;">$20</p>
+
+  </div>
+
+
+  <!-- Tarjeta Fortuna -->
+  <div class="card-popmart" onclick="location.href='pochaco.html'">
+
+    <div class="img-container">
+      <img src="categoria/sanrio 3.jfif"
+           alt="Hello Kitty Fortuna">
+
+      <img class="img-hover"
+           src="categoria/sanrio 3.3.jfif"
+           alt="Fortuna Hover">
+    </div>
+
+    <h2>Colección Hello Kitty Fortuna y Suerte – Sanrio</h2>
+    <p>Figuras sorpresa oficiales de Hello Kitty.</p>
+    <p style="font-weight:bold; color:#b00020;">$15</p>
+
+  </div>
+  </div>
+</main>
+<!-- SUSCRIPCIÓN -->
+<section class="suscripcion">
+  <h2>¡Únete a la magia!</h2>
+  <p>Recibe novedades, lanzamientos y descuentos exclusivos de nuestras Cajas Misteriosas.</p>
+
+  <form class="suscripcion-form" id="formSuscripcion">
+    <input type="email" id="emailSuscripcion" placeholder="Tu correo electrónico" required>
+    <button type="submit">Suscribirme</button>
+  </form>
+
+  <p class="suscripcion-msg" id="suscripcionMsg"></p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h2>Cajitas Misteriosas</h2>
+      <p>Figuras sorpresa, colecciones únicas y magia en cada caja.</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Síguenos</h3>
+      <div class="social-icons">
+ <a href="#" class="icon instagram" aria-label="Instagram">
+  <i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="#" class="icon tiktok" aria-label="TikTok">
+  <i class="fa-brands fa-tiktok"></i>
+</a>
+
+<a href="#" class="icon facebook" aria-label="Facebook">
+  <i class="fa-brands fa-facebook"></i>
+</a>
+
+      </div>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contacto</h3>
+      <p>Email: contacto@cajitasmisteriosas.com</p>
+      <p>Atención: Lun–Vie / 9am–6pm</p>
+    </div>
+
+  </div>
+</footer>
+
+  <!-- Script del menú -->
+  <script>
+    const dropdown = document.querySelector('.dropdown');
+    const dropbtn = document.querySelector('.dropbtn');
+
+    dropbtn.addEventListener('click', () => {
+      dropdown.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
+

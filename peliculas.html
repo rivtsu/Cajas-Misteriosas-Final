@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cajitas Misteriosas: colecciones sorpresa inspiradas en Sanrio, anime, películas y más. Descubre figuras únicas, diseños adorables y productos coleccionables.">
+  <title>Colección Películas</title>
+
+  <!-- CSS general -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- CSS de categorías (el mismo que Sanrio) -->
+  <link rel="stylesheet" href="stylessanrio.css">
+</head>
+
+<body>
+
+  <!-- Header con menú -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <header class="header">
+    <h1>Colección Películas</h1>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+
+        <li class="dropdown">
+          <button class="dropbtn">
+            Colecciones
+            <span class="arrow">▼</span>
+          </button>
+
+          <ul class="dropdown-content">
+            <li>
+              <a href="sanrio.html">
+                <img src="menu/Sanrio.jfif" alt="Sanrio">
+                Sanrio
+              </a>
+            </li>
+
+            <li>
+              <a href="seriesanimadas.html">
+                <img src="menu/Series Animadas.jfif" alt="Series Animadas">
+                Series Animadas
+              </a>
+            </li>
+
+            <li>
+              <a href="peliculas.html">
+                <img src="menu/Peliculas.jfif" alt="Películas">
+                Películas
+              </a>
+            </li>
+
+            <li>
+              <a href="disney.html">
+                <img src="menu/Disney.jpg" alt="Disney">
+                Disney
+              </a>
+            </li>
+
+            <li>
+              <a href="anime.html">
+                <img src="menu/Anime.jfif" alt="Anime">
+                Anime
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Galería estilo Pop Mart -->
+  <main class="galeria-popmart">
+
+    <!-- Tarjeta Harry Potter -->
+    <div class="card-popmart" onclick="location.href='harrypotter.html'">
+
+      <div class="img-container">
+        <!-- Imagen principal -->
+        <img src="imagenes P/Harry Potter and the Prisoner of Azkaban Series Figures-POP MART(United States).jfif"
+             alt="Harry Potter">
+
+        <!-- Imagen hover -->
+        <img class="img-hover"
+             src="categoria/harry.jfif"
+             alt="Harry Potter Hover">
+      </div>
+
+      <h2>Colección Harry Potter</h2>
+      <p>Magia y hechicería en cada cajita sorpresa.</p>
+      <p style="font-weight:bold; color:#b00020;">$25</p>
+
+    </div>
+
+     <!-- Tarjeta Ghibli-Totoro Colección -->
+    <div class="card-popmart" onclick="location.href='harrypotter.html'">
+
+      <div class="img-container">
+        <!-- Imagen principal -->
+        <img src="categoria/Ghibli.jfif"
+             alt="Harry Potter">
+
+        <!-- Imagen hover -->
+        <img class="img-hover"
+             src="categoria/Ghibli 1.jfif"
+             alt="Harry Potter Hover">
+      </div>
+
+      <h2>Ghibli-Totoro Colección</h2>
+      <p>Colección de las hermosas de Hayao Miyasaki</p>
+      <p style="font-weight:bold; color:#b00020;">$15</p>
+
+    </div>
+    </div>
+  </main>
+<!-- SUSCRIPCIÓN -->
+<section class="suscripcion">
+  <h2>¡Únete a la magia!</h2>
+  <p>Recibe novedades, lanzamientos y descuentos exclusivos de nuestras Cajas Misteriosas.</p>
+
+  <form class="suscripcion-form" id="formSuscripcion">
+    <input type="email" id="emailSuscripcion" placeholder="Tu correo electrónico" required>
+    <button type="submit">Suscribirme</button>
+  </form>
+
+  <p class="suscripcion-msg" id="suscripcionMsg"></p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h2>Cajitas Misteriosas</h2>
+      <p>Figuras sorpresa, colecciones únicas y magia en cada caja.</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Síguenos</h3>
+      <div class="social-icons">
+ <a href="#" class="icon instagram" aria-label="Instagram">
+  <i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="#" class="icon tiktok" aria-label="TikTok">
+  <i class="fa-brands fa-tiktok"></i>
+</a>
+
+<a href="#" class="icon facebook" aria-label="Facebook">
+  <i class="fa-brands fa-facebook"></i>
+</a>
+
+      </div>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contacto</h3>
+      <p>Email: contacto@cajitasmisteriosas.com</p>
+      <p>Atención: Lun–Vie / 9am–6pm</p>
+    </div>
+
+  </div>
+</footer>
+  <!-- Script del menú -->
+  <script>
+    const dropdown = document.querySelector('.dropdown');
+    const dropbtn = document.querySelector('.dropbtn');
+
+    dropbtn.addEventListener('click', () => {
+      dropdown.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

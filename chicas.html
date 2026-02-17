@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cajitas Misteriosas: colecciones sorpresa inspiradas en Sanrio, anime, películas y más. Descubre figuras únicas, diseños adorables y productos coleccionables.">
+  <title>Cajita Misteriosa: Chicas Superpoderosas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Cajita Misteriosa: Chicas Superpoderosas</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+
+        <!-- Menú desplegable -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <li class="dropdown">
+          <button class="dropbtn">
+            Colecciones
+            <span class="arrow">▼</span>
+          </button>
+
+          <ul class="dropdown-content">
+
+            <li>
+              <a href="sanrio.html">
+                <img src="menu/Sanrio.jfif" alt="Sanrio">
+                Sanrio
+              </a>
+            </li>
+
+            <li>
+              <a href="seriesanimadas.html">
+                <img src="menu/Series Animadas.jfif" alt="Series Animadas">
+                Series Animadas
+              </a>
+            </li>
+
+            <li>
+              <a href="peliculas.html">
+                <img src="menu/Peliculas.jfif" alt="Películas">
+                Películas
+              </a>
+            </li>
+
+            <li>
+              <a href="disney.html">
+                <img src="menu/Disney.jpg" alt="Disney">
+                Disney
+              </a>
+            </li>
+
+            <li>
+              <a href="anime.html">
+                <img src="menu/Anime.jfif" alt="Anime">
+                Anime
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+   
+  </header>
+<a href="index.html" class="btn-volver">Volver</a>
+
+  <main class="detalle-cajita">
+    <section class="imagenes">
+      <div class="imagen-grande">
+        <img src="imagenes P/chicas super poderosas.jfif" alt="Chicas Superpoderosas vista principal">
+      </div>
+      <div class="imagenes-pequenas">
+        <img src="imagenes P/chicas super poderosas 3.jfif" alt="Chicas Superpoderosas detalle 1">
+        <img src="imagenes P/chicas super poderosas 2.jfif" alt="Chicas Superpoderosas detalle 2">
+      </div>
+    </section>
+
+    <section class="info">
+      <h2>Detalles del producto</h2>
+      <p>¡Explosión de ternura y poder! Esta cajita misteriosa incluye una figura sorpresa de Bombón, Burbuja o Bellota. ¿Cuál te tocará? ¡Solo los valientes lo descubrirán!</p>
+
+      <h2>Información de envío</h2>
+      <p>Envío nacional disponible. Tiempo estimado: 3–5 días hábiles. Empaque seguro y seguimiento incluido.</p>
+    </section>
+
+    <section class="formulario-envio">
+      <h2>Formulario de envío</h2>
+      <form id="formCompra">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <button type="submit">Finalizar compra</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Cajitas Misteriosas</p>
+  </footer>
+
+  <script>
+    document.getElementById("formCompra").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const nombre = document.getElementById("nombre").value;
+      const direccion = document.getElementById("direccion").value;
+
+      alert("🎉 ¡Gracias por tu compra, " + nombre + "!\n\nTu cajita misteriosa será enviada a: " + direccion +
+            "\n\nY recuerda... puede que te toque justo la Superpoderosa que menos esperabas 💥😅");
+    });
+  </script>
+  
+
+  <!-- Script del menú -->
+  <script>
+    const dropdown = document.querySelector('.dropdown');
+    const dropbtn = document.querySelector('.dropbtn');
+
+    dropbtn.addEventListener('click', () => {
+      dropdown.classList.toggle('open');
+    });
+  </script>
+
+<script>
+document.getElementById("formSuscripcion").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const email = document.getElementById("emailSuscripcion").value;
+  const msg = document.getElementById("suscripcionMsg");
+
+  msg.textContent = "¡Gracias por unirte a la magia! Te enviaremos nuestras novedades a " + email + " ✨";
+  msg.style.opacity = "1";
+
+  document.getElementById("emailSuscripcion").value = "";
+});
+</script>
+
+</body>
+</html>
+<link rel="stylesheet" href="stylespochaco.css">

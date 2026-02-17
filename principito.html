@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cajitas Misteriosas: colecciones sorpresa inspiradas en Sanrio, anime, películas y más. Descubre figuras únicas, diseños adorables y productos coleccionables.">
+  <title>Cajita Misteriosa: El Principito</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Cajita Misteriosa: El Principito</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+
+        <!-- Menú desplegable -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <li class="dropdown">
+          <button class="dropbtn">
+            Colecciones
+            <span class="arrow">▼</span>
+          </button>
+
+          <ul class="dropdown-content">
+
+            <li>
+              <a href="sanrio.html">
+                <img src="menu/Sanrio.jfif" alt="Sanrio">
+                Sanrio
+              </a>
+            </li>
+
+            <li>
+              <a href="seriesanimadas.html">
+                <img src="menu/Series Animadas.jfif" alt="Series Animadas">
+                Series Animadas
+              </a>
+            </li>
+
+            <li>
+              <a href="peliculas.html">
+                <img src="menu/Peliculas.jfif" alt="Películas">
+                Películas
+              </a>
+            </li>
+
+            <li>
+              <a href="disney.html">
+                <img src="menu/Disney.jpg" alt="Disney">
+                Disney
+              </a>
+            </li>
+
+            <li>
+              <a href="anime.html">
+                <img src="menu/Anime.jfif" alt="Anime">
+                Anime
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+<a href="index.html" class="btn-volver">Volver</a>
+
+  <main class="detalle-cajita">
+    <section class="imagenes">
+      <div class="imagen-grande">
+        <img src="imagenes P/principito.jfif" alt="El Principito vista principal">
+      </div>
+      <div class="imagenes-pequenas">
+        <img src="imagenes P/principito 2.jpg" alt="El Principito detalle 1">
+        <img src="imagenes P/principito3.jfif" alt="El Principito detalle 2">
+      </div>
+    </section>
+
+    <section class="info">
+      <h2>Detalles del producto</h2>
+      <p>Esta cajita misteriosa está inspirada en la obra clásica de Antoine de Saint-Exupéry. Incluye una figura sorpresa que captura la magia y ternura del Principito.</p>
+
+      <h2>Información de envío</h2>
+      <p>Envío nacional disponible. Tiempo estimado: 3–5 días hábiles. Empaque seguro y seguimiento incluido.</p>
+    </section>
+
+<!-- Formulario de envío -->
+    <section class="formulario-envio">
+      <h2>Formulario de envío</h2>
+      <form id="formCompra">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <button type="submit">Finalizar compra</button>
+      </form>
+    </section>
+
+
+
+<!-- SUSCRIPCIÓN -->
+<section class="suscripcion">
+  <h2>¡Únete a la magia!</h2>
+  <p>Recibe novedades, lanzamientos y descuentos exclusivos de nuestras Cajas Misteriosas.</p>
+
+  <form class="suscripcion-form" id="formSuscripcion">
+    <input type="email" id="emailSuscripcion" placeholder="Tu correo electrónico" required>
+    <button type="submit">Suscribirme</button>
+  </form>
+
+  <p class="suscripcion-msg" id="suscripcionMsg"></p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h2>Cajitas Misteriosas</h2>
+      <p>Figuras sorpresa, colecciones únicas y magia en cada caja.</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Síguenos</h3>
+      <div class="social-icons">
+ <a href="#" class="icon instagram" aria-label="Instagram">
+  <i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="#" class="icon tiktok" aria-label="TikTok">
+  <i class="fa-brands fa-tiktok"></i>
+</a>
+
+<a href="#" class="icon facebook" aria-label="Facebook">
+  <i class="fa-brands fa-facebook"></i>
+</a>
+
+      </div>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contacto</h3>
+      <p>Email: contacto@cajitasmisteriosas.com</p>
+      <p>Atención: Lun–Vie / 9am–6pm</p>
+    </div>
+
+  </div>
+</footer>
+
+  <!-- Script funcional -->
+  <script>
+    document.getElementById("formCompra").addEventListener("submit", function(event) {
+      event.preventDefault(); // Evita recargar la página
+
+      // Capturamos datos del formulario
+      const nombre = document.getElementById("nombre").value;
+      const direccion = document.getElementById("direccion").value;
+
+      // Mostramos mensaje divertido
+      alert("🎉 ¡Gracias por tu compra, " + nombre + "! \n\nTu cajita misteriosa será enviada a: " + direccion +
+            "\n\nRecuerda: puede que te toque justo la figura que menos esperabas de la colección 😅✨");
+    });
+  </script>
+
+
+</script>
+
+  <!-- Script del menú -->
+  <script>
+    const dropdown = document.querySelector('.dropdown');
+    const dropbtn = document.querySelector('.dropbtn');
+
+    dropbtn.addEventListener('click', () => {
+      dropdown.classList.toggle('open');
+    });
+  </script>
+
+<script>
+document.getElementById("formSuscripcion").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const email = document.getElementById("emailSuscripcion").value;
+  const msg = document.getElementById("suscripcionMsg");
+
+  msg.textContent = "¡Gracias por unirte a la magia! Te enviaremos nuestras novedades a " + email + " ✨";
+  msg.style.opacity = "1";
+
+  document.getElementById("emailSuscripcion").value = "";
+});
+</script>
+
+</body>
+</html>
+
+<link rel="stylesheet" href="stylespochaco.css">
